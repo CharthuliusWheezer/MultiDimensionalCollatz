@@ -30,7 +30,8 @@ def run_cycle(start, rule=general_rule_set_1, steps=300):
   
   steps : (positive int) the maximum number of steps to check for convergence within
   
-  returns 
+  returns a boolean that represents whether a cycle was found in the specified number
+  of steps or not (true if a cycle was found and false if not)
   """
   curr = start
   #create a set for checking for cycles
